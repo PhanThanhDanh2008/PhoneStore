@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BLL_PhoneStore\BLL_PhoneStore.csproj" />
+    <ProjectReference Include="..\DTO_PhoneStore\DTO_PhoneStore.csproj" />
+    <ProjectReference Include="..\UTIL_PhoneStore\UTIL_PhoneStore.csproj" />
+  </ItemGroup>
+
+</Project>
