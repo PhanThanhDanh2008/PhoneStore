@@ -88,4 +88,3 @@ Dự án được phát triển dưới giấy phép [MIT](https://choosealicens
   <p>Hãy cùng chúng tôi xây dựng giải pháp quản lý bán hàng điện thoại tốt nhất!</p>
 </div>
 
-![Footer](https://via.placeholder.com/1200x100?text=PhoneStore+-+Powering+Your+Mobile+Business)
