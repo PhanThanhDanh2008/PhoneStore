@@ -1,7 +1,5 @@
 # 📱 PhoneStore - Hệ Thống Quản Lý Bán Điện Thoại
 
-![PhoneStore Banner](https://via.placeholder.com/1200x400?text=PhoneStore+-+Quản+lý+bán+hàng+điện+thoại)
-
 ## 🌟 Giới thiệu
 
 PhoneStore là hệ thống quản lý bán hàng điện thoại di động toàn diện, được thiết kế để hỗ trợ các cửa hàng điện thoại quản lý từ A-Z các hoạt động kinh doanh.
@@ -65,12 +63,6 @@ PhoneStore là hệ thống quản lý bán hàng điện thoại di động to�
    - Chạy file SQL script để tạo database
    - Cập nhật connection string trong file config
 
-## 🖥 Hình ảnh demo
-
-![Giao diện đăng nhập](https://via.placeholder.com/600x400?text=Giao+diện+đăng+nhập)
-![Màn hình bán hàng](https://via.placeholder.com/600x400?text=Màn+hình+bán+hàng)
-![Báo cáo doanh thu](https://via.placeholder.com/600x400?text=Báo+cáo+doanh+thu)
-
 ## 👨‍💻 Đóng góp
 
 Chúng tôi luôn hoan nghênh mọi đóng góp từ cộng đồng! Các bước để đóng góp:
@@ -86,9 +78,8 @@ Dự án được phát triển dưới giấy phép [MIT](https://choosealicens
 
 ## 📞 Liên hệ
 
-- **Tác giả**: [Tên của bạn]
-- **Email**: your.email@example.com
-- **Website**: https://yourwebsite.com
+- **Tác giả**: Phan Thành Danh [Danzo_Dex]
+- **Email**: phanthanhdanh7108@gmail.com
 
 ---
 
