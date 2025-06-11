@@ -15,5 +15,4 @@ namespace DTO_PhoneStore
         public bool VaiTro { get; set; } // true = Admin, false = Nhân viên
         public bool TrangThai { get; set; }
     }
-
 }
