@@ -30,9 +30,8 @@
         {
             txtUsername = new MaterialSkin.Controls.MaterialTextBox2();
             txtPassword = new MaterialSkin.Controls.MaterialTextBox2();
-            chkhienthimatkhau = new MaterialSkin.Controls.MaterialCheckbox();
-            lnkForgotPassword = new LinkLabel();
             btnLogin = new MaterialSkin.Controls.MaterialButton();
+            chkhienthimatkhau = new MaterialSkin.Controls.MaterialCheckbox();
             SuspendLayout();
             // 
             // txtUsername
@@ -91,36 +90,6 @@
             txtPassword.TrailingIcon = null;
             txtPassword.UseSystemPasswordChar = true;
             // 
-            // chkhienthimatkhau
-            // 
-            chkhienthimatkhau.AutoSize = true;
-            chkhienthimatkhau.BackColor = Color.Transparent;
-            chkhienthimatkhau.Depth = 0;
-            chkhienthimatkhau.Location = new Point(30, 230);
-            chkhienthimatkhau.Margin = new Padding(0);
-            chkhienthimatkhau.MouseLocation = new Point(-1, -1);
-            chkhienthimatkhau.MouseState = MaterialSkin.MouseState.HOVER;
-            chkhienthimatkhau.Name = "chkhienthimatkhau";
-            chkhienthimatkhau.ReadOnly = false;
-            chkhienthimatkhau.Ripple = true;
-            chkhienthimatkhau.Size = new Size(167, 37);
-            chkhienthimatkhau.TabIndex = 2;
-            chkhienthimatkhau.Text = "Hiện Thị Mật Khẩu";
-            chkhienthimatkhau.UseVisualStyleBackColor = false;
-            // 
-            // lnkForgotPassword
-            // 
-            lnkForgotPassword.AutoSize = true;
-            lnkForgotPassword.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            lnkForgotPassword.LinkColor = Color.DodgerBlue;
-            lnkForgotPassword.Location = new Point(250, 240);
-            lnkForgotPassword.Name = "lnkForgotPassword";
-            lnkForgotPassword.Size = new Size(95, 15);
-            lnkForgotPassword.TabIndex = 4;
-            lnkForgotPassword.TabStop = true;
-            lnkForgotPassword.Text = "Quên mật khẩu?";
-            lnkForgotPassword.VisitedLinkColor = Color.MediumPurple;
-            // 
             // btnLogin
             // 
             btnLogin.AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -141,6 +110,25 @@
             btnLogin.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnLogin.UseAccentColor = false;
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // chkhienthimatkhau
+            // 
+            chkhienthimatkhau.AutoSize = true;
+            chkhienthimatkhau.BackColor = Color.Transparent;
+            chkhienthimatkhau.Depth = 0;
+            chkhienthimatkhau.Location = new Point(30, 230);
+            chkhienthimatkhau.Margin = new Padding(0);
+            chkhienthimatkhau.MouseLocation = new Point(-1, -1);
+            chkhienthimatkhau.MouseState = MaterialSkin.MouseState.HOVER;
+            chkhienthimatkhau.Name = "chkhienthimatkhau";
+            chkhienthimatkhau.ReadOnly = false;
+            chkhienthimatkhau.Ripple = true;
+            chkhienthimatkhau.Size = new Size(167, 37);
+            chkhienthimatkhau.TabIndex = 2;
+            chkhienthimatkhau.Text = "Hiện Thị Mật Khẩu";
+            chkhienthimatkhau.UseVisualStyleBackColor = false;
+            chkhienthimatkhau.CheckedChanged += chkhienthimatkhau_CheckedChanged;
             // 
             // frmlogin
             // 
@@ -152,7 +140,6 @@
             Controls.Add(txtUsername);
             Controls.Add(txtPassword);
             Controls.Add(chkhienthimatkhau);
-            Controls.Add(lnkForgotPassword);
             Controls.Add(btnLogin);
             MaximizeBox = false;
             MaximumSize = new Size(406, 616);
@@ -167,11 +154,10 @@
 
         private MaterialSkin.Controls.MaterialTextBox2 txtUsername;
         private MaterialSkin.Controls.MaterialTextBox2 txtPassword;
-        private MaterialSkin.Controls.MaterialCheckbox chkhienthimatkhau;
-        private LinkLabel lnkForgotPassword;
 
         #endregion
 
         private MaterialSkin.Controls.MaterialButton btnLogin;
+        private MaterialSkin.Controls.MaterialCheckbox chkhienthimatkhau;
     }
 }

@@ -8,11 +8,14 @@ namespace DTO_PhoneStore
 {
     public class NhanVien
     {
-        public string MaNV { get; set; }
+        public string MaNV {  get; set; }    
         public string HoTen { get; set; }
         public string Email { get; set; }
         public string MatKhau { get; set; }
-        public bool VaiTro { get; set; } // true = Admin, false = Nhân viên
-        public bool TrangThai { get; set; }
+        public bool VaiTro { get; set; }
+        public bool TrangThai {  get; set; }
+
+        public string VaiTroText => VaiTro ? "Quản Lý" : "Nhân Viên";
+        public string TrangThaiText => TrangThai ? "Đang Hoạt Động" : "Tạm Ngưng";
     }
 }
