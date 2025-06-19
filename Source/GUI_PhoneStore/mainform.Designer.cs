@@ -68,9 +68,10 @@
             // pnlContent
             // 
             pnlContent.BackColor = Color.Transparent;
-            pnlContent.Location = new Point(210, 59);
+            pnlContent.Dock = DockStyle.Fill; // Thay đổi từ kích thước cố định sang lấp đầy
+            pnlContent.Location = new Point(204, 58); // Điều chỉnh vị trí dựa trên panel2
             pnlContent.Name = "pnlContent";
-            pnlContent.Size = new Size(1287, 754);
+            pnlContent.Size = new Size(1293, 755); // Kích thước ban đầu, sẽ tự động điều chỉnh khi dock
             pnlContent.TabIndex = 9;
             // 
             // panel2
@@ -98,7 +99,7 @@
             btnQuanLyNhanVien.Depth = 0;
             btnQuanLyNhanVien.HighEmphasis = false;
             btnQuanLyNhanVien.Icon = null;
-            btnQuanLyNhanVien.Location = new Point(4, 268);
+            btnQuanLyNhanVien.Location = new Point(4, 259);
             btnQuanLyNhanVien.Margin = new Padding(4, 6, 4, 6);
             btnQuanLyNhanVien.MouseState = MaterialSkin.MouseState.HOVER;
             btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
@@ -247,7 +248,7 @@
             btnLoaiSanPham.Depth = 0;
             btnLoaiSanPham.HighEmphasis = false;
             btnLoaiSanPham.Icon = null;
-            btnLoaiSanPham.Location = new Point(4, 71);
+            btnLoaiSanPham.Location = new Point(4, 80);
             btnLoaiSanPham.Margin = new Padding(4, 6, 4, 6);
             btnLoaiSanPham.MouseState = MaterialSkin.MouseState.HOVER;
             btnLoaiSanPham.Name = "btnLoaiSanPham";
@@ -265,8 +266,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1497, 813);
-            Controls.Add(panel2);
             Controls.Add(pnlContent);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "mainform";
             Text = "Hệ thống Quản lý Bán hàng";
@@ -282,7 +283,7 @@
 
         private Panel panel1;
         private Panel pnlContent;
-        private MaterialSkin.Controls.MaterialLabel lblMenuTitle;
+        private Label LBlblMenuTitle;
         private Panel panel2;
         private MaterialSkin.Controls.MaterialButton btnHeThong;
         private MaterialSkin.Controls.MaterialButton btnBaoCao;
@@ -291,7 +292,6 @@
         private MaterialSkin.Controls.MaterialButton btnKhachHang;
         private MaterialSkin.Controls.MaterialButton btnSanPham;
         private MaterialSkin.Controls.MaterialButton btnLoaiSanPham;
-        private Label LBlblMenuTitle;
         private MaterialSkin.Controls.MaterialButton btnQuanLyNhanVien;
     }
 }

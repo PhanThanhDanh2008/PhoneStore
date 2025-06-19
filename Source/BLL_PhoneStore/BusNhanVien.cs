@@ -149,7 +149,7 @@ namespace BLL_PhoneStore
                     return "Không tìm thấy nhân viên.";
                 }
 
-                dalNhanVien.deleteNhanVien(maNV);
+                dalNhanVien.hardDeleteNhanVien(maNV);
                 return string.Empty;
             }
             catch (Exception ex)
