@@ -15,6 +15,7 @@ namespace DTO_PhoneStore
         public string? DiaChi { get; set; }
         public int DiemTichLuy { get; set; }
         public bool TrangThai { get; set; }
+        public string TrangThaiText => TrangThai ? "Đang Hoạt Động" : "Tạm Ngưng";
     }
 
 }

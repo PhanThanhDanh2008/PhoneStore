@@ -68,10 +68,10 @@
             // pnlContent
             // 
             pnlContent.BackColor = Color.Transparent;
-            pnlContent.Dock = DockStyle.Fill; // Thay đổi từ kích thước cố định sang lấp đầy
-            pnlContent.Location = new Point(204, 58); // Điều chỉnh vị trí dựa trên panel2
+            pnlContent.Dock = DockStyle.Fill;
+            pnlContent.Location = new Point(204, 58);
             pnlContent.Name = "pnlContent";
-            pnlContent.Size = new Size(1293, 755); // Kích thước ban đầu, sẽ tự động điều chỉnh khi dock
+            pnlContent.Size = new Size(1293, 755);
             pnlContent.TabIndex = 9;
             // 
             // panel2
@@ -218,6 +218,7 @@
             btnKhachHang.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnKhachHang.UseAccentColor = false;
             btnKhachHang.UseVisualStyleBackColor = false;
+            btnKhachHang.Click += btnKhachHang_Click;
             // 
             // btnSanPham
             // 
@@ -260,6 +261,7 @@
             btnLoaiSanPham.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnLoaiSanPham.UseAccentColor = false;
             btnLoaiSanPham.UseVisualStyleBackColor = false;
+            btnLoaiSanPham.Click += btnLoaiSanPham_Click;
             // 
             // mainform
             // 

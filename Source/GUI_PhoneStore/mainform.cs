@@ -45,5 +45,15 @@ namespace GUI_PhoneStore
         {
             LoadChildForm(new frmquanlynhanvien());
         }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            LoadChildForm(new frmKhachHang());
+        }
+
+        private void btnLoaiSanPham_Click(object sender, EventArgs e)
+        {
+            LoadChildForm(new frmLoaiSanPham());
+        }
     }
 }
