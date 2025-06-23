@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data;
 using BLL_PhoneStore;
 using DTO_PhoneStore;
 
@@ -16,6 +8,7 @@ namespace GUI_PhoneStore
     {
         private readonly BusKhachhang _busKhachHang = new BusKhachhang();
         private List<KhachHang> _listKhachHang;
+
         public frmKhachHang()
         {
             InitializeComponent();
@@ -25,8 +18,8 @@ namespace GUI_PhoneStore
         {
             SetupListViewColumns();
             LoadDataToListView();
-
         }
+
         private void ClearInputFields()
         {
             txtMaKH.Text = "";
@@ -37,6 +30,7 @@ namespace GUI_PhoneStore
             txtDiemTichLuy.Text = "";
             rbHoatDong.Checked = true;
         }
+
         private void LoadDataToListView()
         {
             try
@@ -71,6 +65,7 @@ namespace GUI_PhoneStore
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void SetupListViewColumns()
         {
             // Xóa các cột cũ
@@ -95,11 +90,10 @@ namespace GUI_PhoneStore
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //input ko đc để trông 
+            //input ko đc để trông
             if (string.IsNullOrEmpty(txtHoTen.Text.Trim()) || string.IsNullOrEmpty(txtSoDienThoai.Text.Trim()))
 
             {
-
                 MessageBox.Show("Họ tên và Số điện thoại không được để trống.", "Thông báo",
                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -236,7 +230,6 @@ namespace GUI_PhoneStore
 
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
             if (e.RowIndex >= 0 && e.RowIndex < dgvKhachHang.Rows.Count)
             {
                 DataGridViewRow row = dgvKhachHang.Rows[e.RowIndex];
@@ -291,7 +284,7 @@ namespace GUI_PhoneStore
 
         private void txtSoDienThoai_TextChanged(object sender, EventArgs e)
         {
-            // chỉ cho nhập số dương 
+            // chỉ cho nhập số dương
             if (!string.IsNullOrEmpty(txtSoDienThoai.Text) && !long.TryParse(txtSoDienThoai.Text, out _))
             {
                 MessageBox.Show("Số điện thoại chỉ được nhập số.", "Thông báo",
@@ -302,7 +295,7 @@ namespace GUI_PhoneStore
 
         private void txtDiemTichLuy_TextChanged(object sender, EventArgs e)
         {
-            // chỉ cho nhập số nguyên dương 
+            // chỉ cho nhập số nguyên dương
             if (!string.IsNullOrEmpty(txtDiemTichLuy.Text) && !int.TryParse(txtDiemTichLuy.Text, out _))
             {
                 MessageBox.Show("Điểm tích lũy chỉ được nhập số nguyên dương.", "Thông báo",
