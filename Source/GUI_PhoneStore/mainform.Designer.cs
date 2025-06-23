@@ -28,55 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            LBlblMenuTitle = new Label();
-            pnlContent = new Panel();
-            panel2 = new Panel();
-            btnQuanLyNhanVien = new MaterialSkin.Controls.MaterialButton();
-            btnHeThong = new MaterialSkin.Controls.MaterialButton();
-            btnBaoCao = new MaterialSkin.Controls.MaterialButton();
-            btnQuanLyDonHang = new MaterialSkin.Controls.MaterialButton();
-            btnBanHang = new MaterialSkin.Controls.MaterialButton();
-            btnKhachHang = new MaterialSkin.Controls.MaterialButton();
-            btnSanPham = new MaterialSkin.Controls.MaterialButton();
-            btnLoaiSanPham = new MaterialSkin.Controls.MaterialButton();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            lblMenuTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            pnlContent = new Guna.UI2.WinForms.Guna2Panel();
+            panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            btnQuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            btnHeThong = new Guna.UI2.WinForms.Guna2Button();
+            btnBaoCao = new Guna.UI2.WinForms.Guna2Button();
+            btnQuanLyDonHang = new Guna.UI2.WinForms.Guna2Button();
+            btnBanHang = new Guna.UI2.WinForms.Guna2Button();
+            btnKhachHang = new Guna.UI2.WinForms.Guna2Button();
+            btnSanPham = new Guna.UI2.WinForms.Guna2Button();
+            btnLoaiSanPham = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.CornflowerBlue;
-            panel1.Controls.Add(LBlblMenuTitle);
+            panel1.BackColor = Color.FromArgb(0, 120, 215);
+            panel1.BorderRadius = 10;
+            panel1.Controls.Add(lblMenuTitle);
+            panel1.CustomizableEdges = customizableEdges1;
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
+            panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             panel1.Size = new Size(1497, 58);
             panel1.TabIndex = 0;
             // 
-            // LBlblMenuTitle
+            // lblMenuTitle
             // 
-            LBlblMenuTitle.AutoSize = true;
-            LBlblMenuTitle.Font = new Font("Stencil", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LBlblMenuTitle.ForeColor = Color.White;
-            LBlblMenuTitle.Location = new Point(48, 9);
-            LBlblMenuTitle.Name = "LBlblMenuTitle";
-            LBlblMenuTitle.Size = new Size(117, 42);
-            LBlblMenuTitle.TabIndex = 0;
-            LBlblMenuTitle.Text = "MENU";
+            lblMenuTitle.BackColor = Color.Transparent;
+            lblMenuTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMenuTitle.ForeColor = Color.White;
+            lblMenuTitle.Location = new Point(48, 9);
+            lblMenuTitle.Name = "lblMenuTitle";
+            lblMenuTitle.Size = new Size(117, 40);
+            lblMenuTitle.TabIndex = 0;
+            lblMenuTitle.Text = "MENU";
             // 
             // pnlContent
             // 
-            pnlContent.BackColor = Color.Transparent;
+            pnlContent.BackColor = Color.White;
+            pnlContent.BorderRadius = 10;
+            pnlContent.CustomizableEdges = customizableEdges3;
             pnlContent.Dock = DockStyle.Fill;
             pnlContent.Location = new Point(204, 58);
             pnlContent.Name = "pnlContent";
+            pnlContent.ShadowDecoration.CustomizableEdges = customizableEdges4;
             pnlContent.Size = new Size(1293, 755);
             pnlContent.TabIndex = 9;
             // 
             // panel2
             // 
-            panel2.BackColor = SystemColors.ActiveCaption;
+            panel2.BackColor = Color.FromArgb(51, 51, 76);
+            panel2.BorderRadius = 10;
             panel2.Controls.Add(btnQuanLyNhanVien);
             panel2.Controls.Add(btnHeThong);
             panel2.Controls.Add(btnBaoCao);
@@ -85,182 +101,152 @@
             panel2.Controls.Add(btnKhachHang);
             panel2.Controls.Add(btnSanPham);
             panel2.Controls.Add(btnLoaiSanPham);
+            panel2.CustomizableEdges = customizableEdges5;
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 58);
             panel2.Name = "panel2";
+            panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             panel2.Size = new Size(204, 755);
             panel2.TabIndex = 10;
             // 
             // btnQuanLyNhanVien
             // 
-            btnQuanLyNhanVien.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnQuanLyNhanVien.BackColor = SystemColors.ActiveCaptionText;
-            btnQuanLyNhanVien.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnQuanLyNhanVien.Depth = 0;
-            btnQuanLyNhanVien.HighEmphasis = false;
-            btnQuanLyNhanVien.Icon = null;
+            btnQuanLyNhanVien.Animated = true;
+            btnQuanLyNhanVien.BorderRadius = 8;
+            btnQuanLyNhanVien.CustomizableEdges = customizableEdges7;
+            btnQuanLyNhanVien.FillColor = Color.FromArgb(51, 51, 76);
+            btnQuanLyNhanVien.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnQuanLyNhanVien.ForeColor = Color.White;
+            btnQuanLyNhanVien.HoverState.FillColor = Color.FromArgb(0, 120, 215);
             btnQuanLyNhanVien.Location = new Point(4, 259);
-            btnQuanLyNhanVien.Margin = new Padding(4, 6, 4, 6);
-            btnQuanLyNhanVien.MouseState = MaterialSkin.MouseState.HOVER;
             btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
-            btnQuanLyNhanVien.NoAccentTextColor = Color.White;
-            btnQuanLyNhanVien.Size = new Size(163, 36);
+            btnQuanLyNhanVien.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnQuanLyNhanVien.Size = new Size(196, 40);
             btnQuanLyNhanVien.TabIndex = 24;
             btnQuanLyNhanVien.Text = "Quản lý nhân viên";
-            btnQuanLyNhanVien.TextAlign = ContentAlignment.MiddleLeft;
-            btnQuanLyNhanVien.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            btnQuanLyNhanVien.UseAccentColor = false;
-            btnQuanLyNhanVien.UseVisualStyleBackColor = false;
+            btnQuanLyNhanVien.TextAlign = HorizontalAlignment.Left;
             btnQuanLyNhanVien.Click += btnQuanLyNhanVien_Click;
             // 
             // btnHeThong
             // 
-            btnHeThong.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnHeThong.BackColor = SystemColors.ActiveCaptionText;
-            btnHeThong.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnHeThong.Depth = 0;
-            btnHeThong.HighEmphasis = false;
-            btnHeThong.Icon = null;
-            btnHeThong.Location = new Point(30, 455);
-            btnHeThong.Margin = new Padding(4, 6, 4, 6);
-            btnHeThong.MouseState = MaterialSkin.MouseState.HOVER;
+            btnHeThong.Animated = true;
+            btnHeThong.BorderRadius = 8;
+            btnHeThong.CustomizableEdges = customizableEdges7;
+            btnHeThong.FillColor = Color.FromArgb(51, 51, 76);
+            btnHeThong.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnHeThong.ForeColor = Color.White;
+            btnHeThong.HoverState.FillColor = Color.FromArgb(0, 120, 215);
+            btnHeThong.Location = new Point(4, 455);
             btnHeThong.Name = "btnHeThong";
-            btnHeThong.NoAccentTextColor = Color.White;
-            btnHeThong.Size = new Size(94, 36);
+            btnHeThong.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnHeThong.Size = new Size(196, 40);
             btnHeThong.TabIndex = 23;
             btnHeThong.Text = "Hệ thống";
-            btnHeThong.TextAlign = ContentAlignment.MiddleLeft;
-            btnHeThong.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            btnHeThong.UseAccentColor = false;
-            btnHeThong.UseVisualStyleBackColor = false;
+            btnHeThong.TextAlign = HorizontalAlignment.Left;
             // 
             // btnBaoCao
             // 
-            btnBaoCao.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnBaoCao.BackColor = SystemColors.ActiveCaptionText;
-            btnBaoCao.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnBaoCao.Depth = 0;
-            btnBaoCao.HighEmphasis = false;
-            btnBaoCao.Icon = null;
-            btnBaoCao.Location = new Point(30, 385);
-            btnBaoCao.Margin = new Padding(4, 6, 4, 6);
-            btnBaoCao.MouseState = MaterialSkin.MouseState.HOVER;
+            btnBaoCao.Animated = true;
+            btnBaoCao.BorderRadius = 8;
+            btnBaoCao.CustomizableEdges = customizableEdges7;
+            btnBaoCao.FillColor = Color.FromArgb(51, 51, 76);
+            btnBaoCao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBaoCao.ForeColor = Color.White;
+            btnBaoCao.HoverState.FillColor = Color.FromArgb(0, 120, 215);
+            btnBaoCao.Location = new Point(4, 385);
             btnBaoCao.Name = "btnBaoCao";
-            btnBaoCao.NoAccentTextColor = Color.White;
-            btnBaoCao.Size = new Size(83, 36);
+            btnBaoCao.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnBaoCao.Size = new Size(196, 40);
             btnBaoCao.TabIndex = 22;
             btnBaoCao.Text = "Báo cáo";
-            btnBaoCao.TextAlign = ContentAlignment.MiddleLeft;
-            btnBaoCao.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            btnBaoCao.UseAccentColor = false;
-            btnBaoCao.UseVisualStyleBackColor = false;
+            btnBaoCao.TextAlign = HorizontalAlignment.Left;
             // 
             // btnQuanLyDonHang
             // 
-            btnQuanLyDonHang.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnQuanLyDonHang.BackColor = SystemColors.ActiveCaptionText;
-            btnQuanLyDonHang.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnQuanLyDonHang.Depth = 0;
-            btnQuanLyDonHang.HighEmphasis = false;
-            btnQuanLyDonHang.Icon = null;
-            btnQuanLyDonHang.Location = new Point(13, 316);
-            btnQuanLyDonHang.Margin = new Padding(4, 6, 4, 6);
-            btnQuanLyDonHang.MouseState = MaterialSkin.MouseState.HOVER;
+            btnQuanLyDonHang.Animated = true;
+            btnQuanLyDonHang.BorderRadius = 8;
+            btnQuanLyDonHang.CustomizableEdges = customizableEdges7;
+            btnQuanLyDonHang.FillColor = Color.FromArgb(51, 51, 76);
+            btnQuanLyDonHang.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnQuanLyDonHang.ForeColor = Color.White;
+            btnQuanLyDonHang.HoverState.FillColor = Color.FromArgb(0, 120, 215);
+            btnQuanLyDonHang.Location = new Point(4, 316);
             btnQuanLyDonHang.Name = "btnQuanLyDonHang";
-            btnQuanLyDonHang.NoAccentTextColor = Color.White;
-            btnQuanLyDonHang.Size = new Size(161, 36);
+            btnQuanLyDonHang.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnQuanLyDonHang.Size = new Size(196, 40);
             btnQuanLyDonHang.TabIndex = 21;
             btnQuanLyDonHang.Text = "Quản lý đơn hàng";
-            btnQuanLyDonHang.TextAlign = ContentAlignment.MiddleLeft;
-            btnQuanLyDonHang.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            btnQuanLyDonHang.UseAccentColor = false;
-            btnQuanLyDonHang.UseVisualStyleBackColor = false;
+            btnQuanLyDonHang.TextAlign = HorizontalAlignment.Left;
             // 
             // btnBanHang
             // 
-            btnBanHang.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnBanHang.BackColor = SystemColors.ActiveCaptionText;
-            btnBanHang.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnBanHang.Depth = 0;
-            btnBanHang.HighEmphasis = false;
-            btnBanHang.Icon = null;
-            btnBanHang.Location = new Point(30, 23);
-            btnBanHang.Margin = new Padding(4, 6, 4, 6);
-            btnBanHang.MouseState = MaterialSkin.MouseState.HOVER;
+            btnBanHang.Animated = true;
+            btnBanHang.BorderRadius = 8;
+            btnBanHang.CustomizableEdges = customizableEdges7;
+            btnBanHang.FillColor = Color.FromArgb(51, 51, 76);
+            btnBanHang.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBanHang.ForeColor = Color.White;
+            btnBanHang.HoverState.FillColor = Color.FromArgb(0, 120, 215);
+            btnBanHang.Location = new Point(4, 23);
             btnBanHang.Name = "btnBanHang";
-            btnBanHang.NoAccentTextColor = Color.White;
-            btnBanHang.Size = new Size(95, 36);
+            btnBanHang.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnBanHang.Size = new Size(196, 40);
             btnBanHang.TabIndex = 20;
             btnBanHang.Text = "Bán hàng";
-            btnBanHang.TextAlign = ContentAlignment.MiddleLeft;
-            btnBanHang.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            btnBanHang.UseAccentColor = false;
-            btnBanHang.UseVisualStyleBackColor = false;
+            btnBanHang.TextAlign = HorizontalAlignment.Left;
             btnBanHang.Click += btnBanHang_Click;
             // 
             // btnKhachHang
             // 
-            btnKhachHang.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnKhachHang.BackColor = SystemColors.ActiveCaptionText;
-            btnKhachHang.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnKhachHang.Depth = 0;
-            btnKhachHang.HighEmphasis = false;
-            btnKhachHang.Icon = null;
+            btnKhachHang.Animated = true;
+            btnKhachHang.BorderRadius = 8;
+            btnKhachHang.CustomizableEdges = customizableEdges7;
+            btnKhachHang.FillColor = Color.FromArgb(51, 51, 76);
+            btnKhachHang.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnKhachHang.ForeColor = Color.White;
+            btnKhachHang.HoverState.FillColor = Color.FromArgb(0, 120, 215);
             btnKhachHang.Location = new Point(4, 211);
-            btnKhachHang.Margin = new Padding(4, 6, 4, 6);
-            btnKhachHang.MouseState = MaterialSkin.MouseState.HOVER;
             btnKhachHang.Name = "btnKhachHang";
-            btnKhachHang.NoAccentTextColor = Color.White;
-            btnKhachHang.Size = new Size(180, 36);
+            btnKhachHang.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnKhachHang.Size = new Size(196, 40);
             btnKhachHang.TabIndex = 19;
             btnKhachHang.Text = "Quản lý khách hàng";
-            btnKhachHang.TextAlign = ContentAlignment.MiddleLeft;
-            btnKhachHang.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            btnKhachHang.UseAccentColor = false;
-            btnKhachHang.UseVisualStyleBackColor = false;
+            btnKhachHang.TextAlign = HorizontalAlignment.Left;
             btnKhachHang.Click += btnKhachHang_Click;
             // 
             // btnSanPham
             // 
-            btnSanPham.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnSanPham.BackColor = SystemColors.ActiveCaptionText;
-            btnSanPham.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnSanPham.Depth = 0;
-            btnSanPham.HighEmphasis = false;
-            btnSanPham.Icon = null;
+            btnSanPham.Animated = true;
+            btnSanPham.BorderRadius = 8;
+            btnSanPham.CustomizableEdges = customizableEdges7;
+            btnSanPham.FillColor = Color.FromArgb(51, 51, 76);
+            btnSanPham.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSanPham.ForeColor = Color.White;
+            btnSanPham.HoverState.FillColor = Color.FromArgb(0, 120, 215);
             btnSanPham.Location = new Point(4, 141);
-            btnSanPham.Margin = new Padding(4, 6, 4, 6);
-            btnSanPham.MouseState = MaterialSkin.MouseState.HOVER;
             btnSanPham.Name = "btnSanPham";
-            btnSanPham.NoAccentTextColor = Color.White;
-            btnSanPham.Size = new Size(161, 36);
+            btnSanPham.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnSanPham.Size = new Size(196, 40);
             btnSanPham.TabIndex = 18;
             btnSanPham.Text = "Quản lý sản phẩm";
-            btnSanPham.TextAlign = ContentAlignment.MiddleLeft;
-            btnSanPham.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            btnSanPham.UseAccentColor = false;
-            btnSanPham.UseVisualStyleBackColor = false;
+            btnSanPham.TextAlign = HorizontalAlignment.Left;
             // 
             // btnLoaiSanPham
             // 
-            btnLoaiSanPham.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnLoaiSanPham.BackColor = SystemColors.ActiveCaptionText;
-            btnLoaiSanPham.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnLoaiSanPham.Depth = 0;
-            btnLoaiSanPham.HighEmphasis = false;
-            btnLoaiSanPham.Icon = null;
+            btnLoaiSanPham.Animated = true;
+            btnLoaiSanPham.BorderRadius = 8;
+            btnLoaiSanPham.CustomizableEdges = customizableEdges7;
+            btnLoaiSanPham.FillColor = Color.FromArgb(51, 51, 76);
+            btnLoaiSanPham.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLoaiSanPham.ForeColor = Color.White;
+            btnLoaiSanPham.HoverState.FillColor = Color.FromArgb(0, 120, 215);
             btnLoaiSanPham.Location = new Point(4, 80);
-            btnLoaiSanPham.Margin = new Padding(4, 6, 4, 6);
-            btnLoaiSanPham.MouseState = MaterialSkin.MouseState.HOVER;
             btnLoaiSanPham.Name = "btnLoaiSanPham";
-            btnLoaiSanPham.NoAccentTextColor = Color.White;
-            btnLoaiSanPham.Size = new Size(196, 36);
+            btnLoaiSanPham.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnLoaiSanPham.Size = new Size(196, 40);
             btnLoaiSanPham.TabIndex = 17;
             btnLoaiSanPham.Text = "Quản lý loại sản phẩm";
-            btnLoaiSanPham.TextAlign = ContentAlignment.MiddleLeft;
-            btnLoaiSanPham.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            btnLoaiSanPham.UseAccentColor = false;
-            btnLoaiSanPham.UseVisualStyleBackColor = false;
+            btnLoaiSanPham.TextAlign = HorizontalAlignment.Left;
             btnLoaiSanPham.Click += btnLoaiSanPham_Click;
             // 
             // mainform
@@ -283,17 +269,17 @@
 
         #endregion
 
-        private Panel panel1;
-        private Panel pnlContent;
-        private Label LBlblMenuTitle;
-        private Panel panel2;
-        private MaterialSkin.Controls.MaterialButton btnHeThong;
-        private MaterialSkin.Controls.MaterialButton btnBaoCao;
-        private MaterialSkin.Controls.MaterialButton btnQuanLyDonHang;
-        private MaterialSkin.Controls.MaterialButton btnBanHang;
-        private MaterialSkin.Controls.MaterialButton btnKhachHang;
-        private MaterialSkin.Controls.MaterialButton btnSanPham;
-        private MaterialSkin.Controls.MaterialButton btnLoaiSanPham;
-        private MaterialSkin.Controls.MaterialButton btnQuanLyNhanVien;
+        private Guna.UI2.WinForms.Guna2Panel panel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblMenuTitle;
+        private Guna.UI2.WinForms.Guna2Panel pnlContent;
+        private Guna.UI2.WinForms.Guna2Panel panel2;
+        private Guna.UI2.WinForms.Guna2Button btnHeThong;
+        private Guna.UI2.WinForms.Guna2Button btnBaoCao;
+        private Guna.UI2.WinForms.Guna2Button btnQuanLyDonHang;
+        private Guna.UI2.WinForms.Guna2Button btnBanHang;
+        private Guna.UI2.WinForms.Guna2Button btnKhachHang;
+        private Guna.UI2.WinForms.Guna2Button btnSanPham;
+        private Guna.UI2.WinForms.Guna2Button btnLoaiSanPham;
+        private Guna.UI2.WinForms.Guna2Button btnQuanLyNhanVien;
     }
 }

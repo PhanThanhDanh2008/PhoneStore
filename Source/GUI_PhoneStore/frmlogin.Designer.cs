@@ -28,107 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtUsername = new MaterialSkin.Controls.MaterialTextBox2();
-            txtPassword = new MaterialSkin.Controls.MaterialTextBox2();
-            btnLogin = new MaterialSkin.Controls.MaterialButton();
-            chkhienthimatkhau = new MaterialSkin.Controls.MaterialCheckbox();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            chkShowPassword = new Guna.UI2.WinForms.Guna2CheckBox();
             SuspendLayout();
             // 
             // txtUsername
             // 
-            txtUsername.AnimateReadOnly = false;
-            txtUsername.BackgroundImageLayout = ImageLayout.None;
-            txtUsername.CharacterCasing = CharacterCasing.Normal;
-            txtUsername.Depth = 0;
-            txtUsername.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtUsername.HideSelection = true;
-            txtUsername.LeadingIcon = null;
+            txtUsername.Animated = true;
+            txtUsername.BackColor = Color.Transparent;
+            txtUsername.BorderRadius = 8;
+            txtUsername.CustomizableEdges = customizableEdges1;
+            txtUsername.DefaultText = "";
+            txtUsername.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtUsername.ForeColor = Color.Black;
             txtUsername.Location = new Point(30, 100);
-            txtUsername.MaxLength = 50;
-            txtUsername.MouseState = MaterialSkin.MouseState.OUT;
             txtUsername.Name = "txtUsername";
             txtUsername.PasswordChar = '\0';
-            txtUsername.PrefixSuffixText = null;
-            txtUsername.ReadOnly = false;
-            txtUsername.RightToLeft = RightToLeft.No;
+            txtUsername.PlaceholderForeColor = Color.Gray;
+            txtUsername.PlaceholderText = "Tên đăng nhập";
             txtUsername.SelectedText = "";
-            txtUsername.SelectionLength = 0;
-            txtUsername.SelectionStart = 0;
-            txtUsername.ShortcutsEnabled = true;
-            txtUsername.Size = new Size(330, 48);
+            txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtUsername.Size = new Size(330, 40);
             txtUsername.TabIndex = 0;
-            txtUsername.TabStop = false;
-            txtUsername.TextAlign = HorizontalAlignment.Left;
-            txtUsername.TrailingIcon = null;
-            txtUsername.UseSystemPasswordChar = false;
             // 
             // txtPassword
             // 
-            txtPassword.AnimateReadOnly = false;
-            txtPassword.BackgroundImageLayout = ImageLayout.None;
-            txtPassword.CharacterCasing = CharacterCasing.Normal;
-            txtPassword.Depth = 0;
-            txtPassword.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtPassword.HideSelection = true;
-            txtPassword.LeadingIcon = null;
+            txtPassword.Animated = true;
+            txtPassword.BackColor = Color.Transparent;
+            txtPassword.BorderRadius = 8;
+            txtPassword.CustomizableEdges = customizableEdges3;
+            txtPassword.DefaultText = "";
+            txtPassword.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtPassword.ForeColor = Color.Black;
             txtPassword.Location = new Point(30, 170);
-            txtPassword.MaxLength = 50;
-            txtPassword.MouseState = MaterialSkin.MouseState.OUT;
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '●';
-            txtPassword.PrefixSuffixText = null;
-            txtPassword.ReadOnly = false;
-            txtPassword.RightToLeft = RightToLeft.No;
+            txtPassword.PlaceholderForeColor = Color.Gray;
+            txtPassword.PlaceholderText = "Mật khẩu";
             txtPassword.SelectedText = "";
-            txtPassword.SelectionLength = 0;
-            txtPassword.SelectionStart = 0;
-            txtPassword.ShortcutsEnabled = true;
-            txtPassword.Size = new Size(330, 48);
+            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtPassword.Size = new Size(330, 40);
             txtPassword.TabIndex = 1;
-            txtPassword.TabStop = false;
-            txtPassword.TextAlign = HorizontalAlignment.Left;
-            txtPassword.TrailingIcon = null;
-            txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
-            btnLogin.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnLogin.BackColor = Color.Black;
-            btnLogin.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnLogin.Depth = 0;
-            btnLogin.HighEmphasis = true;
-            btnLogin.Icon = null;
-            btnLogin.Image = Properties.Resources.enter__1_;
+            btnLogin.Animated = true;
+            btnLogin.BackColor = Color.Transparent;
+            btnLogin.BorderRadius = 8;
+            btnLogin.CustomizableEdges = customizableEdges5;
+            btnLogin.FillColor = Color.FromArgb(0, 120, 215);
+            btnLogin.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            btnLogin.ForeColor = Color.White;
             btnLogin.Location = new Point(139, 288);
-            btnLogin.Margin = new Padding(4, 6, 4, 6);
-            btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
             btnLogin.Name = "btnLogin";
-            btnLogin.NoAccentTextColor = Color.Empty;
+            btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnLogin.Size = new Size(105, 36);
             btnLogin.TabIndex = 3;
             btnLogin.Text = "Đăng nhập";
-            btnLogin.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnLogin.UseAccentColor = false;
-            btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
-            // chkhienthimatkhau
+            // chkShowPassword
             // 
-            chkhienthimatkhau.AutoSize = true;
-            chkhienthimatkhau.BackColor = Color.Transparent;
-            chkhienthimatkhau.Depth = 0;
-            chkhienthimatkhau.Location = new Point(30, 230);
-            chkhienthimatkhau.Margin = new Padding(0);
-            chkhienthimatkhau.MouseLocation = new Point(-1, -1);
-            chkhienthimatkhau.MouseState = MaterialSkin.MouseState.HOVER;
-            chkhienthimatkhau.Name = "chkhienthimatkhau";
-            chkhienthimatkhau.ReadOnly = false;
-            chkhienthimatkhau.Ripple = true;
-            chkhienthimatkhau.Size = new Size(167, 37);
-            chkhienthimatkhau.TabIndex = 2;
-            chkhienthimatkhau.Text = "Hiện Thị Mật Khẩu";
-            chkhienthimatkhau.UseVisualStyleBackColor = false;
-            chkhienthimatkhau.CheckedChanged += chkhienthimatkhau_CheckedChanged;
+            chkShowPassword.Animated = true;
+            chkShowPassword.AutoSize = true;
+            chkShowPassword.BackColor = Color.Transparent;
+            chkShowPassword.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            chkShowPassword.CheckedState.BorderRadius = 2;
+            chkShowPassword.CheckedState.BorderThickness = 0;
+            chkShowPassword.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            chkShowPassword.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            chkShowPassword.Location = new Point(30, 230);
+            chkShowPassword.Name = "chkShowPassword";
+            chkShowPassword.Size = new Size(106, 18);
+            chkShowPassword.TabIndex = 2;
+            chkShowPassword.Text = "Hiện mật khẩu";
+            chkShowPassword.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            chkShowPassword.UncheckedState.BorderRadius = 2;
+            chkShowPassword.UncheckedState.BorderThickness = 0;
+            chkShowPassword.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
+            chkShowPassword.UseVisualStyleBackColor = false;
+            chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged;
             // 
             // frmlogin
             // 
@@ -137,10 +124,10 @@
             BackgroundImage = Properties.Resources.Simple_Login_Page_Mobile_Prototype__1_;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(390, 577);
-            Controls.Add(txtUsername);
-            Controls.Add(txtPassword);
-            Controls.Add(chkhienthimatkhau);
+            Controls.Add(chkShowPassword);
             Controls.Add(btnLogin);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
             MaximizeBox = false;
             MaximumSize = new Size(406, 616);
             MinimizeBox = false;
@@ -148,16 +135,16 @@
             Name = "frmlogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng Nhập Hệ Thống";
+            Load += frmlogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
-        private MaterialSkin.Controls.MaterialTextBox2 txtUsername;
-        private MaterialSkin.Controls.MaterialTextBox2 txtPassword;
-
         #endregion
 
-        private MaterialSkin.Controls.MaterialButton btnLogin;
-        private MaterialSkin.Controls.MaterialCheckbox chkhienthimatkhau;
+        private Guna.UI2.WinForms.Guna2TextBox txtUsername;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private Guna.UI2.WinForms.Guna2Button btnLogin;
+        private Guna.UI2.WinForms.Guna2CheckBox chkShowPassword;
     }
 }

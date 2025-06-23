@@ -19,11 +19,18 @@ namespace GUI_PhoneStore
         {
             InitializeComponent();
         }
+
         BusNhanVien busNhanVien = new BusNhanVien();
 
-        private void chkhienthimatkhau_CheckedChanged(object sender, EventArgs e)
+        private void frmlogin_Load(object sender, EventArgs e)
         {
-            txtPassword.UseSystemPasswordChar = !chkhienthimatkhau.Checked;
+            // Thêm bất kỳ logic khởi tạo nào nếu cần
+        }
+
+        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            // Khi checkbox được tick, tắt PasswordChar để hiển thị mật khẩu
+            txtPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -42,7 +49,7 @@ namespace GUI_PhoneStore
             {
                 if (nv.TrangThai == false)
                 {
-                    MessageBox.Show(this, "Tài khoản đang tạm khóa, vui lòng viên hệ QTV!!!");
+                    MessageBox.Show(this, "Tài khoản đang tạm khóa, vui lòng liên hệ QTV!!!");
                     return;
                 }
                 AuthUtil.user = nv;
@@ -53,5 +60,4 @@ namespace GUI_PhoneStore
             }
         }
     }
-    }
-
+}
