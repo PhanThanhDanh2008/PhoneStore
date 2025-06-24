@@ -55,5 +55,10 @@ namespace GUI_PhoneStore
         {
             LoadChildForm(new frmLoaiSanPham());
         }
+
+        private void btnSanPham_Click(object sender, EventArgs e)
+        {
+            LoadChildForm(new frmSanPham());
+        }
     }
 }

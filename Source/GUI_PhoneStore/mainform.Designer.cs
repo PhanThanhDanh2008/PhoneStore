@@ -60,9 +60,10 @@
             panel1.CustomizableEdges = customizableEdges1;
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
             panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            panel1.Size = new Size(1497, 58);
+            panel1.Size = new Size(1711, 77);
             panel1.TabIndex = 0;
             // 
             // lblMenuTitle
@@ -70,9 +71,10 @@
             lblMenuTitle.BackColor = Color.Transparent;
             lblMenuTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             lblMenuTitle.ForeColor = Color.White;
-            lblMenuTitle.Location = new Point(48, 9);
+            lblMenuTitle.Location = new Point(55, 12);
+            lblMenuTitle.Margin = new Padding(3, 4, 3, 4);
             lblMenuTitle.Name = "lblMenuTitle";
-            lblMenuTitle.Size = new Size(75, 34);
+            lblMenuTitle.Size = new Size(94, 43);
             lblMenuTitle.TabIndex = 0;
             lblMenuTitle.Text = "MENU";
             // 
@@ -82,10 +84,11 @@
             pnlContent.BorderRadius = 10;
             pnlContent.CustomizableEdges = customizableEdges3;
             pnlContent.Dock = DockStyle.Fill;
-            pnlContent.Location = new Point(204, 58);
+            pnlContent.Location = new Point(233, 77);
+            pnlContent.Margin = new Padding(3, 4, 3, 4);
             pnlContent.Name = "pnlContent";
             pnlContent.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            pnlContent.Size = new Size(1293, 755);
+            pnlContent.Size = new Size(1478, 978);
             pnlContent.TabIndex = 9;
             // 
             // panel2
@@ -102,10 +105,11 @@
             panel2.Controls.Add(btnLoaiSanPham);
             panel2.CustomizableEdges = customizableEdges7;
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 58);
+            panel2.Location = new Point(0, 77);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
             panel2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            panel2.Size = new Size(204, 755);
+            panel2.Size = new Size(233, 978);
             panel2.TabIndex = 10;
             // 
             // btnQuanLyNhanVien
@@ -117,10 +121,11 @@
             btnQuanLyNhanVien.Font = new Font("Segoe UI", 12F);
             btnQuanLyNhanVien.ForeColor = Color.White;
             btnQuanLyNhanVien.HoverState.FillColor = Color.FromArgb(0, 120, 215);
-            btnQuanLyNhanVien.Location = new Point(4, 259);
+            btnQuanLyNhanVien.Location = new Point(5, 345);
+            btnQuanLyNhanVien.Margin = new Padding(3, 4, 3, 4);
             btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
             btnQuanLyNhanVien.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnQuanLyNhanVien.Size = new Size(196, 40);
+            btnQuanLyNhanVien.Size = new Size(224, 53);
             btnQuanLyNhanVien.TabIndex = 24;
             btnQuanLyNhanVien.Text = "Quản lý nhân viên";
             btnQuanLyNhanVien.TextAlign = HorizontalAlignment.Left;
@@ -135,10 +140,11 @@
             btnHeThong.Font = new Font("Segoe UI", 12F);
             btnHeThong.ForeColor = Color.White;
             btnHeThong.HoverState.FillColor = Color.FromArgb(0, 120, 215);
-            btnHeThong.Location = new Point(4, 455);
+            btnHeThong.Location = new Point(5, 607);
+            btnHeThong.Margin = new Padding(3, 4, 3, 4);
             btnHeThong.Name = "btnHeThong";
             btnHeThong.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnHeThong.Size = new Size(196, 40);
+            btnHeThong.Size = new Size(224, 53);
             btnHeThong.TabIndex = 23;
             btnHeThong.Text = "Hệ thống";
             btnHeThong.TextAlign = HorizontalAlignment.Left;
@@ -152,10 +158,11 @@
             btnBaoCao.Font = new Font("Segoe UI", 12F);
             btnBaoCao.ForeColor = Color.White;
             btnBaoCao.HoverState.FillColor = Color.FromArgb(0, 120, 215);
-            btnBaoCao.Location = new Point(4, 385);
+            btnBaoCao.Location = new Point(5, 513);
+            btnBaoCao.Margin = new Padding(3, 4, 3, 4);
             btnBaoCao.Name = "btnBaoCao";
             btnBaoCao.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnBaoCao.Size = new Size(196, 40);
+            btnBaoCao.Size = new Size(224, 53);
             btnBaoCao.TabIndex = 22;
             btnBaoCao.Text = "Báo cáo";
             btnBaoCao.TextAlign = HorizontalAlignment.Left;
@@ -169,10 +176,11 @@
             btnQuanLyDonHang.Font = new Font("Segoe UI", 12F);
             btnQuanLyDonHang.ForeColor = Color.White;
             btnQuanLyDonHang.HoverState.FillColor = Color.FromArgb(0, 120, 215);
-            btnQuanLyDonHang.Location = new Point(4, 316);
+            btnQuanLyDonHang.Location = new Point(5, 421);
+            btnQuanLyDonHang.Margin = new Padding(3, 4, 3, 4);
             btnQuanLyDonHang.Name = "btnQuanLyDonHang";
             btnQuanLyDonHang.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnQuanLyDonHang.Size = new Size(196, 40);
+            btnQuanLyDonHang.Size = new Size(224, 53);
             btnQuanLyDonHang.TabIndex = 21;
             btnQuanLyDonHang.Text = "Quản lý đơn hàng";
             btnQuanLyDonHang.TextAlign = HorizontalAlignment.Left;
@@ -186,10 +194,11 @@
             btnBanHang.Font = new Font("Segoe UI", 12F);
             btnBanHang.ForeColor = Color.White;
             btnBanHang.HoverState.FillColor = Color.FromArgb(0, 120, 215);
-            btnBanHang.Location = new Point(4, 23);
+            btnBanHang.Location = new Point(5, 31);
+            btnBanHang.Margin = new Padding(3, 4, 3, 4);
             btnBanHang.Name = "btnBanHang";
             btnBanHang.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnBanHang.Size = new Size(196, 40);
+            btnBanHang.Size = new Size(224, 53);
             btnBanHang.TabIndex = 20;
             btnBanHang.Text = "Bán hàng";
             btnBanHang.TextAlign = HorizontalAlignment.Left;
@@ -204,10 +213,11 @@
             btnKhachHang.Font = new Font("Segoe UI", 12F);
             btnKhachHang.ForeColor = Color.White;
             btnKhachHang.HoverState.FillColor = Color.FromArgb(0, 120, 215);
-            btnKhachHang.Location = new Point(4, 211);
+            btnKhachHang.Location = new Point(5, 281);
+            btnKhachHang.Margin = new Padding(3, 4, 3, 4);
             btnKhachHang.Name = "btnKhachHang";
             btnKhachHang.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnKhachHang.Size = new Size(196, 40);
+            btnKhachHang.Size = new Size(224, 53);
             btnKhachHang.TabIndex = 19;
             btnKhachHang.Text = "Quản lý khách hàng";
             btnKhachHang.TextAlign = HorizontalAlignment.Left;
@@ -222,13 +232,15 @@
             btnSanPham.Font = new Font("Segoe UI", 12F);
             btnSanPham.ForeColor = Color.White;
             btnSanPham.HoverState.FillColor = Color.FromArgb(0, 120, 215);
-            btnSanPham.Location = new Point(4, 141);
+            btnSanPham.Location = new Point(5, 188);
+            btnSanPham.Margin = new Padding(3, 4, 3, 4);
             btnSanPham.Name = "btnSanPham";
             btnSanPham.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnSanPham.Size = new Size(196, 40);
+            btnSanPham.Size = new Size(224, 53);
             btnSanPham.TabIndex = 18;
             btnSanPham.Text = "Quản lý sản phẩm";
             btnSanPham.TextAlign = HorizontalAlignment.Left;
+            btnSanPham.Click += btnSanPham_Click;
             // 
             // btnLoaiSanPham
             // 
@@ -239,10 +251,11 @@
             btnLoaiSanPham.Font = new Font("Segoe UI", 12F);
             btnLoaiSanPham.ForeColor = Color.White;
             btnLoaiSanPham.HoverState.FillColor = Color.FromArgb(0, 120, 215);
-            btnLoaiSanPham.Location = new Point(4, 80);
+            btnLoaiSanPham.Location = new Point(0, 107);
+            btnLoaiSanPham.Margin = new Padding(3, 4, 3, 4);
             btnLoaiSanPham.Name = "btnLoaiSanPham";
             btnLoaiSanPham.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnLoaiSanPham.Size = new Size(196, 40);
+            btnLoaiSanPham.Size = new Size(233, 53);
             btnLoaiSanPham.TabIndex = 17;
             btnLoaiSanPham.Text = "Quản lý loại sản phẩm";
             btnLoaiSanPham.TextAlign = HorizontalAlignment.Left;
@@ -250,12 +263,13 @@
             // 
             // mainform
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1497, 813);
+            ClientSize = new Size(1711, 1055);
             Controls.Add(pnlContent);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "mainform";
             Text = "Hệ thống Quản lý Bán hàng";
             Load += mainform_Load;
